@@ -8,38 +8,33 @@
     <title>cssMemSlider</title>
 </head>
 <body>
-<div class="container">
-    <div class="slider-body">
-        <input checked type="radio" name="slider" id="switch1">
-        <input type="radio" name="slider" id="switch2">
-        <input type="radio" name="slider" id="switch3">
-        <input type="radio" name="slider" id="switch4">
-        <input type="radio" name="slider" id="switch5">
-        <div class="slider-images">
-            <div class="images-items">
-                <img class="one-img" src="assets/img/1.jpg" alt="first funny picture"/>
-                <img class="two-img" src="assets/img/2.jpg" alt="second funny pictures"/>
-                <img class="three-img" src="assets/img/3.jpg" alt="third funny pictures"/>
-                <img class="four-img" src="assets/img/4.jpg" alt="last funny pictures"/>
-            </div>
+<div class="slider-container">
+    <input id="slide-1" checked type="radio" name="slides">
+    <input id="slide-2" type="radio" name="slides">
+    <input id="slide-3" type="radio" name="slides">
+    <input id="slide-4" type="radio" name="slides">
+
+    <div class="slider-images" id="slider-images">
+        <div class="images-items">
+            <img class="one-img" src="assets/img/jpg/1.jpg" alt="first funny picture"/>
+            <img class="two-img" src="assets/img/jpg/2.jpg" alt="second funny pictures"/>
+            <img class="three-img" src="assets/img/jpg/3.jpg" alt="third funny pictures"/>
+            <img class="four-img" src="assets/img/jpg/4.jpg" alt="last funny pictures"/>
         </div>
-        <div class="slider-controls">
-            <div class="slider-text">
-                <div class="text-items">
-                    <span class="one-img">Don't be sad, you are the best!</span>
-                    <span class="two-img">Overcome difficulties!</span>
-                    <span class="three-img">Work hard!</span>
-                    <span class="four-img">Be positive!</span>
-                </div>
-            </div>
-            <div class="control">
-                <label for="switch1" class="sw-control1"></label>
-                <label for="switch2" class="sw-control2"></label>
-                <label for="switch3" class="sw-control3"></label>
-                <label for="switch4" class="sw-control4"></label>
-                <label for="switch5" class="sw-control5"></label>
-            </div>
+    </div>
+    <div class="slider-text" id="slider-text">
+        <div class="text-items">
+            <span class="one-text text">Don't be sad, you are the best!</span>
+            <span class="two-text text">Overcome difficulties!</span>
+            <span class="three-text text">Work hard!</span>
+            <span class="four-text text">Be positive!</span>
         </div>
+    </div>
+    <div class="slider-controls" id="slider-controls">
+        <label for="slide-1" class="dot dot-1"></label>
+        <label for="slide-2" class="dot dot-2"></label>
+        <label for="slide-3" class="dot dot-3"></label>
+        <label for="slide-4" class="dot dot-4"></label>
     </div>
 </div>
 </body>
